@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.073c9b0a.css",
-    "main.js": "/personal_website/static/js/main.ca86b1c2.js",
-    "static/js/787.28cb0dcd.chunk.js": "/personal_website/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/personal_website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/personal_website/index.html",
-    "main.073c9b0a.css.map": "/personal_website/static/css/main.073c9b0a.css.map",
-    "main.ca86b1c2.js.map": "/personal_website/static/js/main.ca86b1c2.js.map",
-    "787.28cb0dcd.chunk.js.map": "/personal_website/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/www.sovinbirla.com/static/css/main.073c9b0a.css",
+    "main.js": "/www.sovinbirla.com/static/js/main.802fdcf2.js",
+    "static/js/787.28cb0dcd.chunk.js": "/www.sovinbirla.com/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/www.sovinbirla.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/www.sovinbirla.com/index.html",
+    "main.073c9b0a.css.map": "/www.sovinbirla.com/static/css/main.073c9b0a.css.map",
+    "main.802fdcf2.js.map": "/www.sovinbirla.com/static/js/main.802fdcf2.js.map",
+    "787.28cb0dcd.chunk.js.map": "/www.sovinbirla.com/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ca86b1c2.js"
+    "static/js/main.802fdcf2.js"
   ]
 }
