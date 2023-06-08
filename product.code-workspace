@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Downloads/bootstrap-5.3.0-examples/product"
+		},
+		{
+			"path": "../Downloads/bootstrap-5.3.0-examples/cover"
+		},
+		{
+			"path": "../Downloads/bootstrap-5.3.0-examples/heroes"
+		}
+	],
+	"settings": {}
+}

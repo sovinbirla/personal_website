@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+../../product.code-workspace
+
 # testing
 /coverage
 
