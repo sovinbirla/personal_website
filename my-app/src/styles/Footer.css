@@ -1,0 +1,21 @@
+.footer {
+
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    align-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.bi-alarm {
+    font-size: 2rem;
+    color: cornflowerblue;
+}

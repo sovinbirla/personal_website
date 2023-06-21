@@ -15,6 +15,7 @@ import {
 import Navbar from "./components/Navbar";
 // import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,11 +23,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route index element={<Home />} />
           <Route path="/" exact element={<Home />} />
-          <Route path="/education" exact element={<Education />} />
-          <Route path="/about" exact element={<About />} />
-          <Route path="/contact" exact element={<Contact />} />
+          <Route path="education" exact element={<Education />} />
+          <Route path="about" exact element={<About />} />
+          <Route path="contact" exact element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
