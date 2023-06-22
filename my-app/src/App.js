@@ -2,36 +2,43 @@ import logo from "./logo.svg";
 import "./App.css";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Education from "./pages/Education";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Link,
   Route,
   Routes,
   Switch,
+  Outlet,
 } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 // import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 
+// const scrollPos = window.scrollY;
+
+// const [bool_highlight, setHighlight] = useState(false);
+
+// const setHighlight (scrollPos) => {
+
+//   if (scrollPos > 80px){
+
+//   }
+// }
+
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/" exact element={<Home />} />
-          <Route path="education" exact element={<Education />} />
-          <Route path="about" exact element={<About />} />
-          <Route path="contact" exact element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <>
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+    </>
   );
 }
 

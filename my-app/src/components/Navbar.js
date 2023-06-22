@@ -1,97 +1,67 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/Navbar.css";
+import "./Navbar.css";
+import Home from "../pages/Home.js";
+import About from "../pages/About.js";
+import Projects from "../pages/Projects.js";
+import Contact from "../pages/Contact.js";
+import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  return (
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-black text-bg"
-      aria-label="Fifth navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand me-0" href="/">
-          Sovin Birla
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample05"
-          aria-controls="navbarsExample05"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  const [bool_menu, toggle_menu] = useState(false);
 
-        <div
-          class="collapse navbar-collapse d-lg-flex justify-content-end"
-          id="navbarsExample05">
-          <ul class="navbar-nav col-lg-6 justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/education">
-                Education
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">
-                Contact
-              </a>
-            </li>
-          </ul>
+  const openMenu = () => toggle_menu(!bool_menu);
+  const closeMenu = () => toggle_menu(false);
+
+  return (
+    <nav class="navbar">
+      <div class="navbar__container">
+        <Link to="/" className="navbar__logo" onClick={closeMenu}>
+          Sovin Birla
+        </Link>
+        <div class="navbar__toggle" onClick={openMenu}>
+          {bool_menu ? <FaTimes /> : <FaBars />}
         </div>
+        <ul class={bool_menu ? "navbar__menu active" : "navbar__menu"}>
+          <li class="navbar__item">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                "navbar__links" + (isActive ? " activated" : "")
+              }
+              onClick={closeMenu}>
+              Home
+            </NavLink>
+          </li>
+          <li class="navbar__item">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                "navbar__links" + (isActive ? " activated" : "")
+              }
+              onClick={closeMenu}>
+              About
+            </NavLink>
+          </li>
+          <li class="navbar__item">
+            <NavLink
+              to="/Projects"
+              className={({ isActive }) =>
+                "navbar__links" + (isActive ? " activated" : "")
+              }
+              onClick={closeMenu}>
+              Projects
+            </NavLink>
+          </li>
+          <li class="navbar__btn">
+            <NavLink to="/contact" className="button" onClick={closeMenu}>
+              Contact
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </nav>
-    // <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-    //   <div class="container-fluid">
-    //     <a class="navbar-brand" href="/">
-    //       Navbar
-    //     </a>
-    //     <button
-    //       class="navbar-toggler collapsed"
-    //       type="button"
-    //       data-bs-toggle="collapse"
-    //       data-bs-target="#navbarNav"
-    //       aria-controls="navbarNav"
-    //       aria-expanded="false"
-    //       aria-label="Toggle navigation">
-    //       <span class="navbar-toggler-icon"></span>
-    //     </button>
-    //     <div class="navbar-collapse collapse" id="navbarNav">
-    //       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-    //         <li class="nav-item active">
-    //           <a class="nav-link" href="/">
-    //             Home
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="/about">
-    //             Features
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="/education">
-    //             Pricing
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="/contact">
-    //             Disabled
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
 
