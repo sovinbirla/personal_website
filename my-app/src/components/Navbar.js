@@ -14,6 +14,17 @@ function Navbar() {
   const openMenu = () => toggle_menu(!bool_menu);
   const closeMenu = () => toggle_menu(false);
 
+  //   const [isActive, setHighlight] = useState(false);
+
+  //   const testSCrool = () => {
+  //     console.log(window.scrollY);
+
+  //   if (scrollPos < 600){
+  //       bool_highlight =
+  //   }
+  //   };
+  //   window.addEventListener("scroll", testSCrool);
+
   return (
     <nav class="navbar">
       <div class="navbar__container">
@@ -46,7 +57,7 @@ function Navbar() {
           </li>
           <li class="navbar__item">
             <NavLink
-              to="/Projects"
+              to="/projects"
               className={({ isActive }) =>
                 "navbar__links" + (isActive ? " activated" : "")
               }
