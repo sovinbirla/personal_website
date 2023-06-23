@@ -80,11 +80,11 @@ function About() {
           </div>
         </div>
         <div class="main__content">
-          <h1>What do we do?</h1>
-          <h2>We help businesses scale</h2>
+          <h1>Who am I?</h1>
+          <h2>I am a creator</h2>
           <p>Schedule a call to learn more about our services</p>
           <button class="main__btn">
-            <a href="#">Schedule Call</a>
+            <a href="#">Contact Me</a>
           </button>
         </div>
       </div>
