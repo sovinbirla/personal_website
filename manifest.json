@@ -10,12 +10,12 @@
     {
       "src": "SKB.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "356x192"
     },
     {
       "src": "SKB.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x275"
     }
   ],
   "start_url": ".",
