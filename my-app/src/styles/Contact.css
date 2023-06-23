@@ -7,6 +7,7 @@
     --mellow: #9BB5CC;
 
 }
+
 .main {
     background-color: #000001;
     padding: 10rem 0;
@@ -125,6 +126,17 @@
     color: #fff;
     background-image: linear-gradient(to right, var(--light_blue) 0%, var(--blue) 100%);
 }
+
+.shared-class{
+    /* padding: 50px; */
+    background-image: white;
+}
+
+.socials{
+    display: 'inline-block';
+    position: 'relative' 
+}
+
 
 .swag {
     background-image: linear-gradient(to right, var(--blue) 0%, var(--blue) 100%);

@@ -6,8 +6,17 @@ import {
   Routes,
   Switch,
 } from "react-router-dom";
-import App from "../App";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import App from "../App";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/Contact.css";
+import {
+  BsFacebook,
+  BsTwitter,
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+} from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 function Contact() {
   console.log("hereere");
@@ -15,12 +24,23 @@ function Contact() {
     <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Join Our Team</h1>
-          <h2>Sign Up Today</h2>
-          <p>See what makes us different</p>
+          <h1>Come Through</h1>
+          <p>Contact me if you have questions or conerns</p>
           <button class="main__btn">
             <a href="#">Sign Up</a>
           </button>
+          <div className="socials">
+            <IconContext.Provider
+              value={{ className: "shared-class", size: 40 }}>
+              <>
+                <BsFacebook />
+                <BsGithub />
+                <BsInstagram />
+                <BsLinkedin />
+                <BsTwitter />
+              </>
+            </IconContext.Provider>
+          </div>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
