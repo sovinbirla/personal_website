@@ -15,6 +15,7 @@ import {
   BsGithub,
   BsInstagram,
   BsLinkedin,
+  BsSpotify,
 } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
@@ -29,18 +30,6 @@ function Contact() {
           <button class="main__btn">
             <a href="#">Sign Up</a>
           </button>
-          <div className="socials">
-            <IconContext.Provider
-              value={{ className: "shared-class", size: 40 }}>
-              <>
-                <BsFacebook />
-                <BsGithub />
-                <BsInstagram />
-                <BsLinkedin />
-                <BsTwitter />
-              </>
-            </IconContext.Provider>
-          </div>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">

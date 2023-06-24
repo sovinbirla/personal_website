@@ -129,7 +129,10 @@
 
 .shared-class{
     /* padding: 50px; */
+    box-sizing: border-box;
     background-image: white;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .socials{

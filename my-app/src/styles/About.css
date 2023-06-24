@@ -25,12 +25,12 @@
     padding: 0 50px;
 }
 
-.main__content {
+.about__content p{
     color: #fff;
     width: 100%;
 }
 
-.main__content h1 {
+.about__content h1 {
     font-size: 2rem;
     background-color: white;
     background-image: linear-gradient(to top, var(--light_blue) 0%, var(--light_blue) 100%);
@@ -43,7 +43,7 @@
     margin-bottom: 32px;
 }
 
-.main__content h2 {
+.about__content h2 {
     font-size: 4rem;
     background: var(--mellow);
     /* fallback for old browsers */
@@ -62,11 +62,31 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.about__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
+
+.UIUC {
+    grid-template-columns: 2fr;
+    /* display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background: #f1f1f1;
+        margin: 100px auto 0;
+        word-break: break-all;
+        border: 1px solid rgba(0, 0, 0, 0.274); */
+}
+
+/* .uiuc_content{
+    size: ;
+} */
+
+
+
 
 .main__btn {
     font-size: 1.8rem;
@@ -112,6 +132,20 @@
 
 .main__img--container {
     text-align: center;
+}
+
+.coursework .projects_description {
+    display: list-item;
+
+}
+
+.coursework {
+    display: table-footer-group;
+    flex-basis: fit-content;
+    justify-content: center;
+    justify-items: center;
+    border: .5rem solid var(--light_blue);
+    justify-self: normal;
 }
 
 .main__img--card {
@@ -166,21 +200,21 @@
         width: 425px;
     }
 
-    .main__content {
+    .about__content {
         text-align: center;
         margin-bottom: 4rem;
     }
 
-    .main__content h1 {
+    .about__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .main__content h2 {
+    .about__content h2 {
         font-size: 3rem;
     }
 
-    .main__content p {
+    .about__content p {
         margin-top: 1rem;
         font-size: 1.5rem;
     }
@@ -197,16 +231,16 @@
         font-size: 4rem;
     }
 
-    .main__content h1 {
+    .about__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
 
-    .main__content h2 {
+    .about__content h2 {
         font-size: 2rem;
     }
 
-    .main__content p {
+    .about__content p {
         margin-top: 2rem;
     }
 

@@ -11,14 +11,13 @@
 }
 
 .projects h1 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+    background-color: var(--light_blue);
+    /* background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-bottom: 5rem;
     font-size: 2.5rem;
 }
 
@@ -37,67 +36,29 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    transition: 0.3s ease-in;
-}
-
-.projects__card:nth-child(2) {
-    background: #1fa2ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,
-            #a6ffcb,
-            #12d8fa,
-            #1fa2ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,
-            #a6ffcb,
-            #12d8fa,
-            #1fa2ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.projects__card:nth-child(3) {
-    background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
-}
-
-.projects__card h2 {
+    background-image: linear-gradient(to right, var(--light_blue) 0%, var(--dark-blue) 100%);
+    transition: all 0.01s ease-in;
+    border: .5rem solid var(--light_blue);
     text-align: center;
+}
+
+.projects__card h3 {
+    display: center;
+    flex-direction: row;
 }
 
 .projects__card p {
     text-align: center;
-    margin-top: 24px;
-    font-size: 20px;
+    padding: 5px;
 }
-
-.projects__btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.projects__card button {
-    color: #fff;
-    padding: 14px 24px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #000001;
-    font-size: 1rem;
-}
-
-.projects__card button:hover {
-    cursor: pointer;
+.projects__card h2 {
+    text-align: center;
 }
 
 .projects__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 @media screen and (max-width: 1300px) {

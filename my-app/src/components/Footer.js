@@ -2,65 +2,51 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import {
+  BsFacebook,
+  BsTwitter,
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsSpotify,
+} from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 function Footer() {
   return (
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+    <section class="footer__container">
+      <div class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <Link to="/" id="footer__logo">
+              Sovin Birla
+            </Link>
           </div>
-          <div class="footer__link--items">
-            <h2>Contact Us</h2>
-            <a href="/">Contact</a> <a href="/">Support</a>
-            <a href="/">Destinations</a>
-          </div>
-        </div>
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-            <h2>Videos</h2>
-            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
-            <a href="/">Agency</a>
-          </div>
-          <div class="footer__link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> <a href="/">Facebook</a>
-            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          <div class="social__icons">
+            <IconContext.Provider value={{ className: "social__icon--link" }}>
+              <Link to="https://www.facebook.com/profile.php?id=100008394522359">
+                <BsFacebook />
+              </Link>
+              <Link to="https://github.com/sovinbirla">
+                <BsGithub />
+              </Link>
+              <Link to="https://www.instagram.com/sovin_birla/">
+                <BsInstagram />
+              </Link>
+              <Link to="https://www.linkedin.com/in/sovin-birla-421416148/">
+                <BsLinkedin />
+              </Link>
+              <Link to="https://twitter.com/SovinBirla">
+                <BsTwitter />
+              </Link>
+              <Link to="https://open.spotify.com/user/32tspal6zzctn2sl91ssm790t">
+                <BsSpotify />
+              </Link>
+            </IconContext.Provider>
           </div>
         </div>
       </div>
-
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="/" id="footer__logo">
-              COLOR
-            </a>
-          </div>
-          <p class="website__rights">© COLOR 2020. All rights reserved</p>
-          <div class="social__icons">
-            <a href="/" class="social__icon--link" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="/" class="social__icon--link">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="/" class="social__icon--link">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="/" class="social__icon--link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="/" class="social__icon--link">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
   );
 }
 
