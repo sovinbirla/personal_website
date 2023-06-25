@@ -6,7 +6,8 @@ import {
   Routes,
   Switch,
 } from "react-router-dom";
-import App from "../App";
+// import App from "../App";
+import "../styles/Home.css";
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
           <span>Welcome</span>
         </h1>
         <p class="hero__description">I am Sovin Birla</p>
-        <button class="main__btn">
+        <button class="hero__btn">
           <Link to="/about">Learn about me </Link>
         </button>
       </div>

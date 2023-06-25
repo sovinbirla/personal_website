@@ -6,6 +6,17 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --light_blue: #32EAF2;
+  --dark_blue: #05172C;
+  --blue: #2200FF;
+  --yellow: #FFFB6D;
+  --brown: #F1AF92;
+  --mellow: #9BB5CC;
+  --my_gradient:linear-gradient(to right, #fcb045, #1deefd, #281bba);
+
+}
+
 .navbar {
   background: #000001;
   height: 80px;
@@ -31,7 +42,6 @@
 
 #navbar__logo {
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -218,13 +228,8 @@
 .hero__heading span {
   background: #ee0979;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #f0f2f5,
-      #0a1899);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #f0f2f5,
-      #0a1899);
+  background: linear-gradient(to right, #fcb045, #1deefd, #281bba);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -235,16 +240,7 @@
 
 .hero__description {
   font-size: 60px;
-  background: #1deef1;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #1deef1,
-      #1deef2);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #1deef1,
-        #1deef2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffffff;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -307,9 +303,6 @@
   font-size: 4rem;
   background: #ff8177;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #9114ff,
-      #da22ff);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right,
       #8f0eff,
@@ -328,46 +321,7 @@
   font-weight: 700;
 }
 
-.main__btn {
-  font-size: 1.8rem;
-  background: #1deef1;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #1deefd, #281bba);  padding: 20px 60px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 2rem;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.35s;
-  outline: none;
-}
 
-.main__btn a {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
-}
-
-.main__btn:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: #ff1ead;
-  transition: all 0.35s;
-  border-radius: 4px;
-}
-
-.main__btn:hover {
-  color: #fff;
-}
-
-.main__btn:hover:after {
-  width: 100%;
-}
 
 .main__img--container {
   text-align: center;

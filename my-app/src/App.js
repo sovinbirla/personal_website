@@ -15,14 +15,10 @@ import {
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-// import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
 
 function App() {
-  // const scrollPos = window.scrollY;
-
-  // console.log(scrollPos);
   return (
     <>
       <Navbar />

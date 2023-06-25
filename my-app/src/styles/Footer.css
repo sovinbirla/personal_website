@@ -1,6 +1,6 @@
 .footer__container {
     background-color: #000001;
-    padding: 1vh;
+    /* padding: .03vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +70,8 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
+    background: #000001;
+    padding: 1vh;
     /* margin: 40px auto 0 auto; */
 }
 

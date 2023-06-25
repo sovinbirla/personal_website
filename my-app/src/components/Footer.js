@@ -14,7 +14,7 @@ import { IconContext } from "react-icons";
 
 function Footer() {
   return (
-    <section class="footer__container">
+    <div class="footer__container">
       <div class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
@@ -46,7 +46,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

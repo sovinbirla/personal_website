@@ -15,53 +15,55 @@ function Navbar() {
   const closeMenu = () => toggle_menu(false);
 
   return (
-    <nav class="navbar">
-      <div class="navbar__container">
-        <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          Sovin Birla
-        </Link>
-        <div class="navbar__toggle" onClick={openMenu}>
-          {bool_menu ? <FaTimes /> : <FaBars />}
+    <>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <Link to="/" className="navbar__logo" onClick={closeMenu}>
+            Sovin Birla
+          </Link>
+          <div class="navbar__toggle" onClick={openMenu}>
+            {bool_menu ? <FaTimes /> : <FaBars />}
+          </div>
+          <ul class={bool_menu ? "navbar__menu active" : "navbar__menu"}>
+            <li class="navbar__item">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  "top_links" + (isActive ? " activated" : "")
+                }
+                onClick={closeMenu}>
+                <span>Home</span>
+              </NavLink>
+            </li>
+            <li class="navbar__item">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  "top_links" + (isActive ? " activated" : "")
+                }
+                onClick={closeMenu}>
+                About
+              </NavLink>
+            </li>
+            <li class="navbar__item">
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  "top_links" + (isActive ? " activated" : "")
+                }
+                onClick={closeMenu}>
+                Projects
+              </NavLink>
+            </li>
+            <li class="navbar__btn">
+              <NavLink to="/contact" className="button" onClick={closeMenu}>
+                Contact
+              </NavLink>
+            </li>
+          </ul>
         </div>
-        <ul class={bool_menu ? "navbar__menu active" : "navbar__menu"}>
-          <li class="navbar__item">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                "navbar__links" + (isActive ? " activated" : "")
-              }
-              onClick={closeMenu}>
-              Home
-            </NavLink>
-          </li>
-          <li class="navbar__item">
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                "navbar__links" + (isActive ? " activated" : "")
-              }
-              onClick={closeMenu}>
-              About
-            </NavLink>
-          </li>
-          <li class="navbar__item">
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                "navbar__links" + (isActive ? " activated" : "")
-              }
-              onClick={closeMenu}>
-              Projects
-            </NavLink>
-          </li>
-          <li class="navbar__btn">
-            <NavLink to="/contact" className="button" onClick={closeMenu}>
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 
