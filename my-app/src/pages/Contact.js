@@ -9,33 +9,32 @@ import {
 // import App from "../App";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Contact.css";
-import {
-  BsFacebook,
-  BsTwitter,
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsSpotify,
-} from "react-icons/bs";
-import { IconContext } from "react-icons";
 
 function Contact() {
-  console.log("hereere");
+  const myFunction = () => {
+    // Copy the text inside the text field
+    navigator.clipboard.writeText("sovin.birla123@gmail.com");
+
+    // Alert the copied text
+    alert("Copied Sovin's Email");
+
+    return <></>;
+  };
   return (
     <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Come Through</h1>
-          <p>Contact me if you have questions or conerns</p>
-          <button class="main__btn">
-            <a href="#">Sign Up</a>
+          <h1>So.... that's me</h1>
+          <p>Contact me if you have questions or concerns.</p>
+          <button key="test" class="contact_btn" onClick={myFunction}>
+            Email Me
           </button>
         </div>
-        <div class="main__img--container">
-          <div class="main__img--card" id="card-2">
-            <i class="fas fa-users"></i>
+        {/* <div class="contact__img--container">
+          <div class="contact__img--card">
+             <img src="https://u-static.fotor.com/images/text-to-image/result/PRO-ca46ab06f1d043929524a44fa3316cf5.jpg" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -2,20 +2,22 @@
   font-size: 1.8rem;
   background: #ffffff;
   border: none;
-  border-radius: 4px;
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
-  transition: all 0.35s;
-    padding: 20px 60px;
-  outline: none;
+  transition: all 0.1s ease-out;
+  padding: 20px 60px;
+  color: #ffffff;
 }
 
 .hero__btn a {
   position: relative;
-  z-index: 2;
-  color: #fff;
-  text-decoration: none;
+text-decoration: auto;
+}
+
+.hero__btn:hover {
+    background-image: var(--my_gradient);
+    color: #ffffff;
 }
 
 
@@ -26,11 +28,8 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(to right, #fcb045, #1deefd, #281bba);
-  transition: all 0.35s;
-  border-radius: 4px;
+  transition: all 0.1s ease-out;
 }
-
 
 .hero__btn:hover:after{
   width: 100%;

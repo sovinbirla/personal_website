@@ -17,9 +17,9 @@ function Home() {
           <span>Welcome</span>
         </h1>
         <p class="hero__description">I am Sovin Birla</p>
-        <button class="hero__btn">
-          <Link to="/about">Learn about me </Link>
-        </button>
+        <Link to="/about" class="hero__btn">
+          Learn about me
+        </Link>
       </div>
     </div>
   );

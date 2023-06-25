@@ -99,6 +99,13 @@
     color: #fff;
 }
 
+.button a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
 .button:hover {
     display: flex;
     justify-content: center;
@@ -111,6 +118,9 @@
     color: #000000;
 }
 
+.button:hover:after {
+    width: 100%;
+}
 
 .navbar__toggle {
     display: none;

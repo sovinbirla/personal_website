@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import App from "../App";
+// import App from "../App";
 import "../styles/About.css";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function About() {
 
   return (
     <div class="main" id="about">
-      <div class="main__container">
+      <div class="about__container">
         <div class="main__img--container">
           <div class="main__img--card">
             {/* <i class="fas fa-layer-group"> */}
@@ -43,7 +43,7 @@ function About() {
                   toggleState === 2 ? "uiuc-tabs active-tabs" : "uiuc-tabs"
                 }
                 onClick={() => toggleTab(2)}>
-                Cool Projects
+                Cool Stuff
               </div>
             </div>
 
@@ -109,18 +109,11 @@ function About() {
 
           <div class="Gtech">
             <p>
-              I am going to the Georgia Tech this Fall and will be majoring in
-              Quantitative and Computational Finance. landscapes.
-            </p>
-            <p>
               I like to play tennis, and go out on town and exploring city
               landscapes.
             </p>
+            <p>Stay tuned more updates.</p>
           </div>
-
-          {/* <button class="main__btn">
-            <Link to="/contact">Contact Me</Link>
-          </button> */}
         </div>
       </div>
     </div>

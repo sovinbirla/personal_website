@@ -1,29 +1,8 @@
-:root {
-    --light_blue: #32EAF2;
-    --dark_blue: #05172C;
-    --blue: #2200FF;
-    --yellow: #FFFB6D;
-    --brown: #F1AF92;
-    --mellow: #9BB5CC;
-
-}
 .main {
     background-color: #000001;
     padding: 10rem 0;
 }
 
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90%;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
 
 .about__container {
     display: grid;
@@ -44,14 +23,13 @@
 }
 
 .about__content h1 {
-    font-size: 2rem;
-    background-color: var(--brown);
+    font-size: 2.5rem;
+    background-image: var(--my_gradient);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-transform: uppercase;
+    -moz-text-fill-color: transparent;    
     margin-bottom: 32px;
 }
 
@@ -119,7 +97,7 @@
     color: white;
     /* background: rgb(88, 147, 241); */
     text-align: center;
-    border-bottom: 10px solid #E84A27;
+    border-bottom: 10px solid var(--light_blue);
 
 }
 
@@ -201,30 +179,8 @@
     text-align: center;
 }
 
-.coursework .projects_description {
-    display: list-item;
-
-}
-
-.coursework {
-    display: table-footer-group;
-    flex-basis: fit-content;
-    justify-content: center;
-    justify-items: center;
-    border: .5rem solid var(--light_blue);
-    justify-self: normal;
-}
-
 .main__img--card {
     margin: 10px;
-    height: 500px;
-    width: 500px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, var(--light_blue) 0%, var(--blue) 100%);
 }
 
 
@@ -243,7 +199,7 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
-    .main__container {
+    .about__container {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
@@ -282,13 +238,13 @@
         font-size: 1.5rem;
     }
     
-    .uiuc_content li {
+    .container_uiuc li {
         font-size: 16px;
         font-weight: 100;
         margin: 0%;
     }
 
-    .uiuc_content p {
+    .container_uiuc p {
         color: black;
         font-size: 16px;
         font-weight: 100;
