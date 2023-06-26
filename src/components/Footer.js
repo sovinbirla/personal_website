@@ -8,6 +8,7 @@ import {
   BsLinkedin,
   BsSpotify,
 } from "react-icons/bs";
+import "./Footer.css";
 import { IconContext } from "react-icons";
 
 function Footer() {
@@ -16,7 +17,7 @@ function Footer() {
       <div class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <Link to="/personal_website" id="footer__logo">
+            <Link to="/" id="footer__logo">
               Sovin Birla
             </Link>
           </div>

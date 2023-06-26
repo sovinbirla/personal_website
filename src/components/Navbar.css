@@ -20,7 +20,6 @@
     border-bottom-color: #ea1c1c;
     border-bottom: 1;
     --bs-navbar-padding-y: 0;
-    padding-top: 0.5rem;
 }
 
 
@@ -168,14 +167,6 @@
         padding-left: 25px;
     }
 
-    /* .navbar__toggle .fa-bars{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 3s ease-in-out;
-        background: #fff;
-    } */
-
     
     .navbar__item {
         width: 100%;
@@ -202,13 +193,12 @@
     }
 
     .navbar__toggle {
-        display: block;
-        position: absolute;
-        top: 15%;
-        right: 5%;
-        font-size: 1.8rem;
+        display: flex;
         color: #fff;
         cursor: pointer;
-        transform: scale(1.5);
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
     }
 }
