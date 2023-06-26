@@ -62,7 +62,8 @@
     font-size: 2rem;
     font-weight: 700;
     color: wheat;
-
+    justify-items: center;
+    text-align:center;
 }
 
 .contact_btn {
@@ -75,7 +76,9 @@
     position: relative;
     outline: none;
     color: white;
-            width: -webkit-fill-available;
+    width: -webkit-fill-available;
+    margin: 10px;
+
 }
 
 .contact_btn span{

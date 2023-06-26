@@ -16,7 +16,7 @@ function Footer() {
       <div class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <Link to="/" id="footer__logo">
+            <Link to="/personal_website" id="footer__logo">
               Sovin Birla
             </Link>
           </div>
