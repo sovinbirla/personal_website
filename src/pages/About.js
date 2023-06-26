@@ -18,12 +18,12 @@ function About() {
         </div>
 
         <div class="about__content">
-          <h1>Who art I?</h1>
-
+          <h1>Who am I?</h1>
           <p>
-            I am Sovin Birla. I like to code only where there are no bugs, but
-            sometimes also where there are bugs. I went to U of I and took some
-            really cool courses and built some projects.
+            I am Sovin Birla. I am software engineer. I went to U of I and took
+            some really cool courses and built some projects. I am will be going
+            to Georgia Tech for a Master's in Quantitative and Computational
+            Finance.
           </p>
 
           <div class="container_uiuc">
@@ -105,10 +105,7 @@ function About() {
           </div>
 
           <div class="Gtech">
-            <p>
-              I like to play tennis, and go out on town and exploring city
-              landscapes.
-            </p>
+            <p></p>
             <p>Stay tuned more updates.</p>
           </div>
         </div>
