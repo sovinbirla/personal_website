@@ -6,7 +6,6 @@ import {
   Routes,
   Switch,
 } from "react-router-dom";
-// import App from "../App";
 import "../styles/Home.css";
 
 function Home() {
