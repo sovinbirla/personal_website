@@ -30,7 +30,7 @@ text-decoration: auto;
   height: 100%;
   transition: all 0.1s ease-out;
 }
-
+`
 .hero__btn:hover:after{
   width: 100%;
 }

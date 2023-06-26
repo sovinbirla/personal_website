@@ -23,11 +23,11 @@ function Contact() {
   return (
     <div class="main" id="sign-up">
       <div class="main__container">
-        <div class="main__content">
+        <div class="contact__content">
           <h1>So.... that's me</h1>
           <p>Contact me if you have questions or concerns.</p>
-          <button key="test" class="contact_btn" onClick={myFunction}>
-            Email Me
+          <button key="test" class="contact_btn">
+            Email Me <span>at sovin.birla123@gmail.com</span>
           </button>
         </div>
         {/* <div class="contact__img--container">
