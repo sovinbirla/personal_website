@@ -21,9 +21,9 @@ function About() {
           <h1>Who am I?</h1>
           <p>
             I am Sovin Birla. I am software engineer. I went to U of I and took
-            some really cool courses and built some projects. I am will be going
-            to Georgia Tech for a Master's in Quantitative and Computational
-            Finance.
+            some really cool courses and built some projects. This fall, I will
+            be going to Georgia Tech for a Master's in Quantitative and
+            Computational Finance.
           </p>
 
           <div class="container_uiuc">
