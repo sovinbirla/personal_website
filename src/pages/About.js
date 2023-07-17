@@ -20,9 +20,9 @@ function About() {
         <div class="about__content">
           <h1>Who am I?</h1>
           <p>
-            I am Sovin Birla. I am software engineer. I went to U of I and took
-            some really cool courses and built some projects. This fall, I will
-            be going to Georgia Tech for a Master's in Quantitative and
+            I am Sovin Birla. I am a software engineer. I went to U of I and
+            took some really cool courses and built some projects. This fall I
+            will be going to Georgia Tech for my Master's in Quantitative and
             Computational Finance.
           </p>
 
@@ -78,7 +78,7 @@ function About() {
                   <li>
                     <b>Github Social Media:</b>
                     <p>
-                      Built a react app and used axios to build a social media
+                      Built a React app and used axios to build a social media
                       app for software developers on campus by templating
                       Instagram's user profile.
                     </p>
@@ -95,7 +95,7 @@ function About() {
                     <p>
                       I scraped Goodreads using Beautiful Soup and stored the
                       top "x" number of books and authors in a MongoDB instance.
-                      I then used GraphQL to post filtered API requests to a
+                      I then used GraphQL to post filtered API requests to the
                       React frontend.
                     </p>
                   </li>
@@ -106,7 +106,7 @@ function About() {
 
           <div class="Gtech">
             <p></p>
-            <p>Stay tuned more updates.</p>
+            <p>Stay tuned for more updates.</p>
           </div>
         </div>
       </div>
