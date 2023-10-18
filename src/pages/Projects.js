@@ -118,7 +118,7 @@ function Projects() {
 
   return (
     <div class="projects" id="projects">
-      <div className="title">The Past</div>
+      <div className="title">Experiences</div>
       <div class="projects__wrapper">{listExperiences}</div>
     </div>
   );

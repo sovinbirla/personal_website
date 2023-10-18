@@ -18,6 +18,10 @@
     padding: 0 100px;
 }
 
+.contact_btn {
+
+}
+.
 .main__content {
     /* justify-content: center;
     align-items: center; */
@@ -29,7 +33,7 @@
 .contact__content h1 {
     font-size: 2rem;
     text-align: center;
-    background-color: white;
+    background-color: blacks;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -37,7 +41,6 @@
     -moz-text-fill-color: transparent;
     margin-bottom: 32px;
 }
-
 .main__content h2 {
     font-size: 4rem;
     background: var(--mellow);
@@ -61,7 +64,7 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: wheat;
+    color: white;
     justify-items: center;
     text-align:center;
 }
@@ -102,20 +105,6 @@
     border-width: 10px;
     transition: all 0.35s;
     border-radius: 4px;
-}
-
-.contact_btn:hover {
-    color: black;
-    background: white; 
-
-}
-
-.contact_btn:hover span {
-    color: black;
-}
-
-.contact_btn:hover:after {
-    width: 100%;
 }
 
 .contact_btn span {
@@ -218,6 +207,7 @@
         width: 250px;
         height: 250px;
     }
+    
 
     .fa-users,
     .fa-layer-group {

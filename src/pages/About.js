@@ -68,14 +68,25 @@ function About() {
                 }>
                 <ul>
                   <li>
-                    <b>Monte Carlo Simulation Poker:</b>
+                    <b>Raspberry Pi Network cluster:</b>
+                    <p>
+                      I built a SLURM cluster of networks that were served on 4
+                      Raspberry Pi devices'. Installed IKBR on the devices and
+                      ran several backtests among various IKBR accounts. Enabled
+                      a Network File Share system with a shared drive.
+                    </p>
                   </li>
-                  <p>
-                    I built the entire gameplay of Poker and used Markov Chain
-                    Monte Simulation to calculate the winning hand probabilities
-                    of each player after each round of play.
-                  </p>
+                  <p></p>
                   <li>
+                    <li>
+                      <b>Monte Carlo Simulation Poker:</b>
+                    </li>
+                    <p>
+                      I built the entire gameplay of Poker and used Monte Carlo
+                      Simulation to calculate the winning hand probabilities of
+                      each player after each round of play.
+                    </p>
+                    <li></li>
                     <b>Github Social Media:</b>
                     <p>
                       Built a React app and used axios to build a social media

@@ -52,7 +52,7 @@ function Navbar() {
                   "top_links" + (isActive ? " activated" : "")
                 }
                 onClick={closeMenu}>
-                Projects
+                Experiences
               </NavLink>
             </li>
             <li class="navbar__btn">
