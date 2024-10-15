@@ -20,10 +20,10 @@ function About() {
         <div class="about__content">
           <h1>Who am I?</h1>
           <p>
-            I am Sovin Birla. I am a software engineer. I went to U of I and
-            took some really cool courses and built some projects. This fall I
-            will be going to Georgia Tech for my Master's in Quantitative and
-            Computational Finance.
+            I am Sovin Birla. I am a Master's student in the Quantitative and
+            Computational Finance program at Georgia Tech. I enjoy learning and
+            like building things. I am a resilient person, and I am always
+            looking for ways to improve myself.
           </p>
 
           <div class="container_uiuc">
@@ -40,12 +40,12 @@ function About() {
                   toggleState === 2 ? "uiuc-tabs active-tabs" : "uiuc-tabs"
                 }
                 onClick={() => toggleTab(2)}>
-                Cool Stuff
+                Projects
               </div>
             </div>
 
-            <div className="uiuc_content_tabs">
-              <div
+            {/* <div className="uiuc_content_tabs"> */}
+            {/* <div
                 className={
                   toggleState === 1
                     ? "uiuc_content active-content"
@@ -58,35 +58,34 @@ function About() {
                   <li>Time Series Analysis(STAT 429)</li>
                   <li>Numerical Methods(CS 357)</li>
                 </ul>
-              </div>
+              </div> */}
 
-              <div
-                className={
-                  toggleState === 2
-                    ? "uiuc_content active-content"
-                    : "uiuc_content"
-                }>
-                <ul>
+            <div
+              className={
+                toggleState === 2
+                  ? "uiuc_content active-content"
+                  : "uiuc_content"
+              }>
+              <ul>
+                <li>
+                  <b>Raspberry Pi Network cluster:</b>
+                  <p>
+                    I built a SLURM cluster of networks served on 4 Raspberry Pi
+                    devices' and enabled a Network File Share system with a
+                    shared drive.
+                  </p>
+                </li>
+                <p></p>
+                <li>
                   <li>
-                    <b>Raspberry Pi Network cluster:</b>
-                    <p>
-                      I built a SLURM cluster of networks that were served on 4
-                      Raspberry Pi devices'. Installed IKBR on the devices and
-                      ran several backtests among various IKBR accounts. Enabled
-                      a Network File Share system with a shared drive.
-                    </p>
+                    <b>Monte Carlo Simulation Poker:</b>
                   </li>
-                  <p></p>
+                  <p>
+                    I built the entire gameplay of Poker and used Monte Carlo
+                    Simulation to calculate the winning hand probabilities of
+                    each player after each round of play.
+                  </p>
                   <li>
-                    <li>
-                      <b>Monte Carlo Simulation Poker:</b>
-                    </li>
-                    <p>
-                      I built the entire gameplay of Poker and used Monte Carlo
-                      Simulation to calculate the winning hand probabilities of
-                      each player after each round of play.
-                    </p>
-                    <li></li>
                     <b>Github Social Media:</b>
                     <p>
                       Built a React app and used axios to build a social media
@@ -94,30 +93,32 @@ function About() {
                       Instagram's user profile.
                     </p>
                   </li>
-                  <li>
-                    <b>UNO Game:</b>
-                    <p>
-                      Built an interactive visualization for UNO gameplay in
-                      Android Studio.
-                    </p>
-                  </li>
-                  <li>
-                    <b>Goodreads MongoDB Database:</b>
-                    <p>
-                      I scraped Goodreads using Beautiful Soup and stored the
-                      top "x" number of books and authors in a MongoDB instance.
-                      I then used GraphQL to post filtered API requests to the
-                      React frontend.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+                </li>
+                <li>
+                  <b>UNO Game:</b>
+                  <p>
+                    Built an interactive visualization for UNO gameplay in
+                    Android Studio.
+                  </p>
+                </li>
+                <li>
+                  <b>Goodreads MongoDB Database:</b>
+                  <p>
+                    I scraped Goodreads using Beautiful Soup and stored the top
+                    "x" number of books and authors in a MongoDB instance. I
+                    then used GraphQL to post filtered API requests to the React
+                    frontend.
+                  </p>
+                </li>
+              </ul>
             </div>
-          </div>
-
-          <div class="Gtech">
-            <p></p>
-            <p>Stay tuned for more updates.</p>
+            {/* </div> */}
+            {/* </div> */}
+ 
+            <div class="Gtech">
+              <p></p>
+              <p>Stay tuned for more updates.</p>
+            </div>
           </div>
         </div>
       </div>

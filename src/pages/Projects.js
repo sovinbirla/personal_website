@@ -13,8 +13,18 @@ function Projects() {
   const experiences = [
     {
       id: 0,
-      name: "TBD",
-      // title: "SWE",
+      name: "Elevance Health",
+      title: "Graduate Software Engineer",
+      location: "Atlanta, GA",
+      startDate: "May 2024",
+      endDate: "Aug 2024",
+      // image_url:
+      //   "https://www.mavenwave.com/wp-content/uploads/2014/10/image03.png",
+      // points: [
+      //   "Extracted data to forecast In-N-Out locations’ exposure to flood risk using Big Query, Keras, Pandas, and Plotly",
+      //   "Deployed the full stack In-N-Out application using Django and React to GKE clusters in GCP using Helm charts for multiple versioning",
+      //   "Served a full stack Dockerized application with React and Firebase for a plug-and-play POS system, for Mcdonald's with Raspberry Pi’s as Edge terminals, as a solution to main POS system failure",
+      // ], // title: "SWE",
       // location: "Chicago, IL",
       // startDate: "Jun 2021",
       // endDate: "Jan 2023",

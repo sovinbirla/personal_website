@@ -1,4 +1,35 @@
-.about_main {
+.uiuc-tabs {
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    background: #13294B;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    color: white;
+    font-size: x-large;
+}
+
+.uiuc_content_tabs {
+    display: flex;
+}
+
+.active-tabs {
+    content: "";
+    display: "contents";
+    background: #13294B;
+    color: white;
+    text-align: center;
+    border-bottom: 10px solid var(--light_blue);
+}
+
+.uiuc_content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}.about_main {
     background-color: #000001;
     padding: 3rem 0;
     display: flex;

@@ -16,11 +16,11 @@ function Footer() {
     <div class="footer__container">
       <div class="social__media">
         <div class="social__media--wrap">
-          <div class="footer__logo">
+          {/* <div class="footer__logo">
             <Link to="/" id="footer__logo">
               Sovin Birla
             </Link>
-          </div>
+          </div> */}
           <div class="social__icons">
             <IconContext.Provider value={{ className: "social__icon--link" }}>
               <Link to="https://www.facebook.com/profile.php?id=100008394522359">

@@ -5,6 +5,8 @@
     padding: 10rem 0;
 }
 
+/* #putting in the center */
+
 .main__container {
     display: grid;
     grid-template-columns:auto;
@@ -18,9 +20,6 @@
     padding: 0 100px;
 }
 
-.contact_btn {
-
-}
 .
 .main__content {
     /* justify-content: center;
