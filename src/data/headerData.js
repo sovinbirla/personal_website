@@ -1,10 +1,9 @@
 import resume from '../assets/pdf/resume.pdf'
+import profile from '../assets/png/profile2.png'
 
 export const headerData = {
     name: 'Sovin Birla',
-    title: "Lifelong Learner",
-    desciption:"Welcome to all the exquisitively inquisitive minds out there!",
-    image: '/Users/sovin/personal_website_2/src/assets/png/IMG_1238.jpg'
-
-    // resumePdf: resume
+    // description: "I am a passionate learner and developer, always eager to explore new technologies and improve my skills. I enjoy working on projects that challenge me and allow me to grow.",
+    image: profile,
+    resumePdf: resume
 }

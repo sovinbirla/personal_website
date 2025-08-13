@@ -31,19 +31,15 @@ function Navbar() {
 
   const useStyles = makeStyles((t) => ({
     navMenu: {
-      fontSize: "2.5rem",
-      color: theme.tertiary,
-      cursor: "pointer",
-      transform: "translateY(-10px)",
-      transition: "color 0.3s",
-      position: "fixed",
-      top: "30px",
-      right: "30px",
+      top: '30px',
+      fontSize: '3rem',
+      color: "black",
+      cursor: 'pointer',
       "&:hover": {
         color: theme.primary,
       },
       [t.breakpoints.down("sm")]: {
-        fontSize: "2.5rem",
+        fontSize: "3.5rem",
       },
       [t.breakpoints.down("xs")]: {
         fontSize: "2rem",

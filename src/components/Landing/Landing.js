@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import { Button } from "@material-ui/core";
-import { NavHashLink as NavLink } from "react-router-hash-link";
+import { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import "./Landing.css";
@@ -8,161 +6,87 @@ import { ThemeContext } from "../../contexts/ThemeContext";
 import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
 
-import landingImage from "../../assets/png/profile2.png";
 
 import {
-  FaInstagram,
-  FaSpotify,
-  FaTwitter,
-  FaLinkedin,
-  FaGithub,
-  FaFacebook,
+	FaInstagram,
+	FaSpotify,
+	FaTwitter,
+	FaLinkedin,
+	FaGithub,
+	FaFacebook,
 } from "react-icons/fa";
 
 function Landing() {
-  const { theme, drawerOpen } = useContext(ThemeContext);
+	const { theme, drawerOpen } = useContext(ThemeContext);
 
-  const useStyles = makeStyles((t) => ({
-    resumeBtn: {
-      color: theme.primary,
-      borderRadius: "30px",
-      textTransform: "inherit",
-      textDecoration: "none",
-      width: "150px",
-      fontSize: "1rem",
-      fontWeight: "500",
-      height: "50px",
-      fontFamily: "var(--primaryFont)",
-      border: `3px solid ${theme.primary}`,
-      transition: "100ms ease-out",
-      "&:hover": {
-        backgroundColor: theme.tertiary,
-        color: theme.secondary,
-        border: `3px solid ${theme.tertiary}`,
-      },
-      [t.breakpoints.down("sm")]: {
-        width: "180px",
-      },
-    },
-    contactBtn: {
-      backgroundColor: theme.primary,
-      color: theme.secondary,
-      borderRadius: "30px",
-      textTransform: "inherit",
-      textDecoration: "none",
-      width: "150px",
-      height: "50px",
-      fontSize: "1rem",
-      fontWeight: "500",
-      fontFamily: "var(--primaryFont)",
-      border: `3px solid ${theme.primary}`,
-      transition: "100ms ease-out",
-      "&:hover": {
-        backgroundColor: theme.secondary,
-        color: theme.tertiary,
-        border: `3px solid ${theme.tertiary}`,
-      },
-      [t.breakpoints.down("sm")]: {
-        display: "none",
-      },
-    },
-  }));
-
-  const classes = useStyles();
-
-  return (
-    <div className="landing">
-      <div className="landing--container">
-        <div
-          className="landing--container-left"
-          style={{ backgroundColor: theme.primary }}>
-          <div className="lcl--content">
-            {socialsData.linkedIn && (
-              <a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
-                <FaLinkedin
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-            {socialsData.github && (
-              <a href={socialsData.github} target="_blank" rel="noreferrer">
-                <FaGithub
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-            {socialsData.twitter && (
-              <a href={socialsData.twitter} target="_blank" rel="noreferrer">
-                <FaTwitter
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-            {socialsData.spotify && (
-              <a href={socialsData.spotify} target="_blank" rel="noreferrer">
-                <FaSpotify
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-            {socialsData.instagram && (
-              <a href={socialsData.instagram} target="_blank" rel="noreferrer">
-                <FaInstagram
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-            {socialsData.facebook && (
-              <a href={socialsData.facebook} target="_blank" rel="noreferrer">
-                <FaFacebook
-                  className="landing--social"
-                  style={{ color: theme.secondary }}
-                />
-              </a>
-            )}
-          </div>
-        </div>
-        <img
-          src={landingImage}
-          alt=""
-          className="landing--img"
-          style={{
-            opacity: `${drawerOpen ? "0" : "1"}`,
-            borderColor: theme.secondary,
-          }}
-        />
-        <div
-          className="landing--container-right"
-          style={{ backgroundColor: theme.secondary }}>
-          <div className="lcr--content" style={{ color: theme.tertiary }}>
-            <h6>{headerData.title}</h6>
-            <h1>{headerData.name}</h1>
-            <p>{headerData.desciption}</p>
-
-            <div className="lcr-buttonContainer">
-              {headerData.resumePdf && (
-                <a
-                  href={headerData.resumePdf}
-                  download="resume"
-                  target="_blank"
-                  rel="noreferrer">
-                  <Button className={classes.resumeBtn}>Download CV</Button>
-                </a>
-              )}
-              <NavLink to="/contacts" smooth={true} spy="true" duration={2000}>
-                <Button className={classes.contactBtn}>Contact</Button>
-              </NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+	// Layout structure:
+	// Left Container - Social Icons
+	// Main Content Area - Image and Heading Stacked
+	
+	return (
+		<div className="landing">
+			<div className="landing--image" style={{ position: "relative" }}>
+				<img
+					src={headerData.image}
+					alt="Profile"
+					style={{ borderColor: theme.primary }}
+				/>
+				<div
+					className="landing--overlay-content"
+					style={{
+						position: "relative",
+						left: "0px",
+						width: "100%",
+						height: "100%",
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "flex-end",
+						alignItems: "center",
+						color: "#ffffff",
+						background: "transparent",
+						bottom: "100%",
+					}}
+				>
+					<div style={{ textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center" }}>
+						<h1>{headerData.name}</h1>
+						<p>{headerData.description}</p>
+					</div>
+					<div className="lcl--content" style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}>
+						{socialsData.linkedIn && (
+						<a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
+							<FaLinkedin className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					{socialsData.github && (
+						<a href={socialsData.github} target="_blank" rel="noreferrer">
+							<FaGithub className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					{socialsData.twitter && (
+						<a href={socialsData.twitter} target="_blank" rel="noreferrer">
+							<FaTwitter className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					{socialsData.spotify && (
+						<a href={socialsData.spotify} target="_blank" rel="noreferrer">
+							<FaSpotify className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					{socialsData.instagram && (
+						<a href={socialsData.instagram} target="_blank" rel="noreferrer">
+							<FaInstagram className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					{socialsData.facebook && (
+						<a href={socialsData.facebook} target="_blank" rel="noreferrer">
+							<FaFacebook className="landing--social" style={{ color: "#ffffff" }} />
+						</a>
+					)}
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default Landing;
